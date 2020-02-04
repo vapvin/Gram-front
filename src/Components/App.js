@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "../Styles/GlobalStyles";
+import Theme from "../Styles/Theme";
 
-
-function App() {
-  return (
-   <h1>Hello World</h1>
-  );
-}
-
-export default App;
+export default () => (
+  <ThemeProvider theme={Theme}>
+    <GlobalStyles />
+  </ThemeProvider>
+);
