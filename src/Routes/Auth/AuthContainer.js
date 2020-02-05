@@ -10,7 +10,7 @@ export default () => {
   const firstName = useInput('');
   const lastName = useInput('');
   const email = useInput('');
-  const requestSecret = useMutation(LOG_IN, {
+  const [requestSecret] = useMutation(LOG_IN, {
     variables: { email: email.value }
   });
 
