@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Route, Switch } from "react-router-dom";
-import Auth from "../Routes/Auth";
-import Feed from "../Routes/Feed";
-import Explore from "../Routes/Explore";
-import Search from "../Routes/Search";
-import Profile from "../Routes/Profile";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Route, Switch } from 'react-router-dom';
+import Auth from '../Routes/Auth';
+import Feed from '../Routes/Feed';
+import Explore from '../Routes/Explore';
+import Search from '../Routes/Search';
+import Profile from '../Routes/Profile';
 
 const LoggedInRoutes = () => (
   <Switch>
@@ -28,4 +28,5 @@ const AppRouter = ({ isLoggedIn }) =>
 AppRouter.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired
 };
+
 export default AppRouter;
