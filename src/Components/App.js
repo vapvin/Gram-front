@@ -44,5 +44,6 @@ export default () => {
         <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
       </>
     </ThemeProvider>
+    <Test />
   );
 };
